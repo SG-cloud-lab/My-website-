@@ -1,1 +1,127 @@
 
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-purple: #2D094B;
+    --accent-gold: #E5A823;
+    --accent-gold-hover: #c9921c;
+    --bg-light: #F4F5F8;
+    --card-white: #FFFFFF;
+    --text-dark: #1F2937;
+    --text-muted: #6B7280;
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* --- Header / Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-white);
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.brand-text h1 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-purple);
+    line-height: 1.1;
+}
+
+.brand-text p {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--primary-purple);
+    cursor: pointer;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background-color: var(--primary-purple);
+    color: #ffffff;
+    padding: 24px 16px 36px 16px;
+    text-align: center;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.btn-live-top {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: var(--primary-purple);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 8px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 24px;
+}
+
+.hero-content h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+    margin-bottom: 12px;
+}
+
+.hero-subtext, .hero-author {
+    font-size: 0.85rem;
+    color: #e2d9f3;
+    margin-bottom: 8px;
+}
+
+.hero-author strong {
+    color: #ffffff;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-hero {
+    background-color: var(--accent-gold);
+    color: var(--primary-purple);
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
