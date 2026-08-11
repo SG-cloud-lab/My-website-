@@ -196,6 +196,95 @@
             </div>
         </div>
     </section>
+    <!-- Audio Playlist Section -->
+    <section class="section audio-section" id="audio">
+        <div class="section-header">
+            <span class="section-subtitle">LISTEN ON THE GO</span>
+            <h2>Listen On The Go</h2>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="audio-filters">
+            <span class="filter-label">Filters by Topic</span>
+            <div class="filter-pills">
+                <button class="pill active">Series</button>
+                <button class="pill">All</button>
+                <button class="pill">Series / Topic <i class="fas fa-chevron-down"></i></button>
+                <button class="pill">Prophecy</button>
+                <button class="pill">Deliverance</button>
+            </div>
+        </div>
+
+        <!-- Dynamic Main Audio Player Box -->
+        <div class="audio-player-card">
+            <div class="player-top">
+                <button class="btn-play-main" id="mainAudioPlayBtn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="player-info">
+                    <span class="playlist-tag">PLAYLIST</span>
+                    <h3 id="currentAudioTitle">Latest Sunday Service</h3>
+                </div>
+            </div>
+            
+            <!-- Standard HTML5 Audio Tag (Connected to External Media URL) -->
+            <audio id="globalAudioPlayer" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="metadata"></audio>
+
+            <div class="player-controls">
+                <span class="time-text" id="currentTimeText">0:00</span>
+                <input type="range" id="audioSeeker" class="seeker-bar" value="0" max="100">
+                <span class="time-text" id="durationText">-0:00</span>
+            </div>
+        </div>
+
+        <!-- Audio Tracklist Grid -->
+        <div class="tracklist">
+            <!-- Track 1 -->
+            <div class="track-item">
+                <div class="track-meta">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=100&auto=format&fit=crop&q=60" alt="Track Cover" class="track-thumb">
+                    <div class="track-details">
+                        <h4>Latest Sunday Service</h4>
+                        <span class="track-date">Jan 11, 2026</span>
+                    </div>
+                </div>
+                <div class="track-actions">
+                    <button class="btn-audio-play" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" data-title="Latest Sunday Service">Play</button>
+                    <a href="#" class="btn-audio-dl">Download MP3</a>
+                </div>
+            </div>
+
+            <!-- Track 2 -->
+            <div class="track-item">
+                <div class="track-meta">
+                    <img src="https://images.unsplash.com/photo-1438283173091-5dbf5c5a3236?w=100&auto=format&fit=crop&q=60" alt="Track Cover" class="track-thumb">
+                    <div class="track-details">
+                        <h4>Prophetic Deliverance Word</h4>
+                        <span class="track-date">Jan 11, 2026</span>
+                    </div>
+                </div>
+                <div class="track-actions">
+                    <button class="btn-audio-play" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" data-title="Prophetic Deliverance Word">Play</button>
+                    <a href="#" class="btn-audio-dl">Download MP3</a>
+                </div>
+            </div>
+
+            <!-- Track 3 -->
+            <div class="track-item">
+                <div class="track-meta">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=100&auto=format&fit=crop&q=60" alt="Track Cover" class="track-thumb">
+                    <div class="track-details">
+                        <h4>Walking in Faith</h4>
+                        <span class="track-date">Jan 11, 2026</span>
+                    </div>
+                </div>
+                <div class="track-actions">
+                    <button class="btn-audio-play" data-src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" data-title="Walking in Faith">Play</button>
+                    <a href="#" class="btn-audio-dl">Download MP3</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
  
     <script src="script.js"></script>
